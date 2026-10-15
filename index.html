@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema endocrino paso a paso</title>
+<meta name="description" content="Guía de estudio interactiva del sistema endocrino: glándulas y hormonas, eje hipotálamo-hipófisis, retroalimentación, homeostasis, hormonas y conducta, y hormonas y desarrollo.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <marker id="ahPos" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/></marker>
+    <marker id="ahNeg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--bad)"/></marker>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#inicio">🧪 Sistema endocrino <span>· paso a paso</span></a>
+    <div class="spacer"></div>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema claro/oscuro">◐ Tema</button>
+  </div>
+  <nav class="chips" id="nav" aria-label="Secciones">
+    <a href="#inicio">Inicio</a>
+    <a href="#sistemas">1 · Dos sistemas</a>
+    <a href="#hormonas">2 · Glándulas y hormonas</a>
+    <a href="#eje">3 · Hipotálamo-hipófisis</a>
+    <a href="#regulacion">4 · Retroalimentación</a>
+    <a href="#glandulas">5 · Glándula por glándula</a>
+    <a href="#conducta">6 · Hormonas y conducta</a>
+    <a href="#desarrollo">7 · Hormonas y desarrollo</a>
+    <a href="#metodo">8 · El método</a>
+    <a href="#resueltos">9 · Casos resueltos</a>
+    <a href="#practica">10 · Práctica</a>
+    <a href="#unir">11 · Uní</a>
+    <a href="#simulacro">12 · Simulacro</a>
+    <a href="#repaso">13 · Repaso final</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ======================================================= INICIO -->
+<section class="page" id="inicio" tabindex="-1" data-title="Inicio">
+  <p class="eyebrow">Sistema endocrino · Guía de estudio interactiva</p>
+  <h1>Las hormonas no se memorizan: se <em>entienden</em> como una red de mensajes.</h1>
+  <p class="lead">Hay decenas de hormonas y es fácil perderse. Esta web te propone otra forma de estudiarlas: entender <b>quién manda el mensaje, a quién, para qué y quién lo frena</b>. Con esas cuatro preguntas, casi todo el sistema endocrino se ordena solo.</p>
+
+  <div class="box key">
+    <span class="box-title">📋 Qué vas a encontrar</span>
+    <ul>
+      <li><b>Teoría narrada</b> (secciones 1 a 7): los dos sistemas de control, qué es una hormona, el eje hipotálamo-hipófisis, la retroalimentación, cada glándula, hormonas y conducta, y hormonas y desarrollo.</li>
+      <li><b>Un método</b> (sección 8) para responder cualquier pregunta o caso.</li>
+      <li><b>Casos resueltos</b> (sección 9) que muestran cómo piensa alguien que ya entiende el tema.</li>
+      <li><b>Práctica interactiva</b> (secciones 10 a 12): preguntas con corrección y radar de confianza, un juego de unir y un simulacro con tiempo, en tres niveles.</li>
+    </ul>
+  </div>
+
+  <h2>Primero, ¿qué es eso de ser "metacognitivo"?</h2>
+  <p>Metacognición es <b>pensar sobre tu propio pensamiento</b>. No alcanza con "haber leído": tenés que saber <em>qué sabés</em>, <em>qué no sabés</em> y <em>cuándo te estás equivocando</em>. En este tema es clave, porque los nombres se parecen mucho (glucagón y glucógeno, adenohipófisis y neurohipófisis, ACTH y ADH) y es muy fácil creer que sabés algo que en realidad estás confundiendo.</p>
+  <div class="two-col">
+    <div class="box think"><span class="box-title">🧭 Antes: planificar</span>¿Qué me preguntan? ¿Qué glándula u hormona está en juego? ¿Qué sé de ella?</div>
+    <div class="box think"><span class="box-title">🔍 Durante: monitorear</span>¿Tiene sentido? ¿La hormona que nombré realmente hace eso? ¿Sube o baja?</div>
+  </div>
+  <div class="box think"><span class="box-title">🪞 Después: evaluar</span>¿Lo podría explicar sin mirar? Si me equivoqué, ¿fue por confundir nombres, por no conocer el circuito o por apuro?</div>
+
+  <h2>Tu punto de partida: el semáforo</h2>
+  <p>Antes de estudiar, sé honesto con vos. Para cada tema, marcá cómo te sentís <b>ahora</b>. No es una evaluación: es un mapa para saber dónde poner energía. Al final vas a volver a hacerlo y vas a ver la diferencia.</p>
+  <div class="card" id="semAntes"></div>
+  <p class="small muted">🔴 no lo sé · 🟡 más o menos · 🟢 lo puedo explicar sin mirar. Todo se guarda en este navegador.</p>
+
+  <h2>Un recorrido sugerido (≈ 3 horas)</h2>
+  <ol class="plan">
+    <li><b>Semáforo</b><span class="time">5 min</span>Si tenés muchos 🔴 en un tema, empezá por ahí.</li>
+    <li><b>Teoría: secciones 1 a 7</b><span class="time">75 min</span>Leé con lapicera y dibujá los ejes vos mismo. Al final de cada sección hay un "Explicalo sin mirar": hacelo <em>en voz alta</em>.</li>
+    <li><b>El método (sección 8)</b><span class="time">10 min</span>Las 5 preguntas que ordenan cualquier hormona.</li>
+    <li><b>Casos resueltos (sección 9)</b><span class="time">35 min</span>Antes de abrir cada paso, intentá adivinar qué viene.</li>
+    <li><b>Práctica y juego de unir (secciones 10 y 11)</b><span class="time">30 min</span>Marcá tu confianza antes de corregir.</li>
+    <li><b>Simulacro (sección 12)</b><span class="time">15 min</span>6 preguntas: 2 fáciles, 2 medias y 2 difíciles.</li>
+    <li><b>Repaso final y descanso</b><span class="time">10 min</span>Dormir consolida lo que estudiaste (y sí: la melatonina tiene que ver; la vas a conocer en la sección 5).</li>
+  </ol>
+
+  <div class="box goal">
+    <span class="box-title">📚 Bibliografía de referencia</span>
+    Curtis, Barnes, Schnek y Massarini, <i>Invitación a la Biología en contexto social</i>, cap. "El sistema endocrino"; Curtis, <i>Biología</i>, 9ª ed., cap. 34 "El sistema endocrino"; Audesirk, <i>Biología: la vida en la Tierra</i>, 7ª ed., cap. 37 "Control químico del cuerpo de los animales: el sistema endocrino". Lectura complementaria: Peñafiel Peñafiel y Novo Pinos (2023), "Eje intestino-cerebro y su impacto en el estrés", <i>RECIAMUC</i> 7(2).
+  </div>
+</section>
+
+<!-- ======================================================= 1 SISTEMAS -->
+<section class="page" id="sistemas" tabindex="-1" data-title="1 · Dos sistemas">
+  <p class="eyebrow">Capítulo 1 · El panorama</p>
+  <h1>Dos sistemas para coordinar un cuerpo</h1>
+
+  <div class="box goal">
+    <span class="box-title">🎯 Al terminar vas a poder…</span>
+    <ul>
+      <li>Comparar el sistema nervioso y el endocrino (comunicación, vías, velocidad y duración).</li>
+      <li>Explicar qué es el control neuroendocrino.</li>
+      <li>Definir homeostasis y ubicar a las hormonas entre las "bases biológicas de la conducta".</li>
+    </ul>
+  </div>
+
+  <div class="box think">
+    <span class="box-title">🤔 Antes de leer, pensá 30 segundos</span>
+    Un susto te acelera el corazón en un segundo, pero el "temblor" te dura varios minutos aunque el peligro ya pasó. ¿Por qué creés que la reacción tiene dos velocidades?
+  </div>
+
+  <h2>Billones de células que tienen que ponerse de acuerdo</h2>
+  <p>Tu cuerpo está organizado en niveles: moléculas → células → tejidos → órganos → sistemas → organismo. Para que billones de células trabajen como <b>un solo individuo</b>, necesitan comunicarse. Todos los seres vivos lo hacen con <b>mensajeros químicos</b>: moléculas que se unen a <b>receptores específicos</b> de otras células y les cambian el comportamiento. Esa comunicación es la que permite mantener la <b>homeostasis</b>.</p>
+  <p>Cuando se habla de las <b>bases biológicas de la conducta</b>, aparecen tres protagonistas: los <b>genes</b> (la información), el <b>sistema nervioso</b> y el <b>sistema endocrino</b>. Los dos sistemas son las dos "redes de mensajería" del cuerpo, y funcionan de maneras muy distintas.</p>
+
+  <h3>Una metáfora: WhatsApp privado vs. radio</h3>
+  <ul>
+    <li>El <b>sistema nervioso</b> es como un <b>mensaje privado</b>: va por un "cable" (la neurona) hasta un destinatario puntual, llega en milisegundos y el efecto dura poco.</li>
+    <li>El <b>sistema endocrino</b> es como una <b>transmisión de radio</b>: la hormona se larga a la sangre y llega a todo el cuerpo, pero solo "la escuchan" las células que tienen el receptor (la radio sintonizada). Tarda minutos u horas, y el efecto dura más.</li>
+  </ul>
+
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th></th><th>Sistema nervioso</th><th>Sistema endocrino</th></tr></thead>
+    <tbody>
+      <tr><td>Señal</td><td>Impulso eléctrico + neurotransmisor</td><td>Hormona</td></tr>
+      <tr><td>Célula productora</td><td>Neurona</td><td>Célula glandular</td></tr>
+      <tr><td>Vía</td><td>Axones, sinapsis</td><td>Sangre</td></tr>
+      <tr><td>Alcance</td><td>Focalizado</td><td>Generalizado (todas las células con receptor)</td></tr>
+      <tr><td>Velocidad</td><td>Muy rápida (milisegundos)</td><td>Lenta (minutos a horas)</td></tr>
+      <tr><td>Duración del efecto</td><td>Breve</td><td>Prolongada</td></tr>
+      <tr><td>Blancos</td><td>Neuronas, músculos, algunas glándulas</td><td>Cualquier célula con el receptor</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>No son dos mundos separados: el control neuroendocrino</h2>
+  <p>Los dos sistemas trabajan en íntima relación. Algunas neuronas, en lugar de liberar neurotransmisores en una sinapsis, liberan sustancias <b>a la sangre</b>: se llaman <b>neurohormonas</b>, y la célula que las produce es una <b>célula neurosecretora</b>. El gran ejemplo es el <b>hipotálamo</b>: una parte del encéfalo que controla a la principal glándula endocrina, la hipófisis. Por eso se habla de un sistema <b>neuroendocrino</b>.</p>
+  <div class="box key"><span class="box-title">🔑 La respuesta a la pregunta del principio</span>El susto activa primero la vía <b>nerviosa</b> (y la médula suprarrenal, que está controlada por nervios), y por eso el corazón se acelera en un segundo. Después entran las <b>hormonas</b>, que siguen circulando un buen rato: el "temblor" dura aunque el peligro ya haya pasado.</div>
+
+  <h2>Homeostasis: el objetivo de todo esto</h2>
+  <p><b>Homeostasis</b> es la tendencia del organismo a mantener su <b>medio interno relativamente constante</b>: la temperatura, la glucosa en sangre, la cantidad de agua, el calcio y el pH, a pesar de que afuera todo cambie. No es algo quieto: es un equilibrio <b>dinámico</b>, que se corrige todo el tiempo. Todo sistema homeostático tiene tres partes:</p>
+  <ol>
+    <li>Un <b>sensor</b> que detecta el cambio (por ejemplo, el páncreas "mide" la glucemia).</li>
+    <li>Un <b>centro de control</b> que compara con el valor deseado.</li>
+    <li>Un <b>efector</b> que corrige (la hormona actuando sobre sus células blanco).</li>
+  </ol>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar (en voz alta), después abrí</summary>
+    <ol>
+      <li>Compará el sistema nervioso y el endocrino en velocidad, alcance y duración.<span class="ans">Nervioso: rápido, focalizado, breve. Endocrino: lento, generalizado, duradero.</span></li>
+      <li>¿Qué es una neurohormona?<span class="ans">Un mensajero fabricado por una neurona que se libera a la sangre (ej.: ADH, oxitocina, CRH).</span></li>
+      <li>Definí homeostasis con un ejemplo.<span class="ans">Mantener el medio interno estable; ej.: la glucemia regulada por insulina y glucagón.</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 2 HORMONAS -->
+<section class="page" id="hormonas" tabindex="-1" data-title="2 · Glándulas y hormonas">
+  <p class="eyebrow">Capítulo 2 · Los mensajeros</p>
+  <h1>Glándulas y hormonas: quién manda el mensaje y cómo se lee</h1>
+
+  <div class="box goal">
+    <span class="box-title">🎯 Al terminar vas a poder…</span>
+    <ul>
+      <li>Diferenciar glándulas endocrinas, exocrinas y mixtas.</li>
+      <li>Enumerar las características generales de las hormonas.</li>
+      <li>Explicar cómo actúa una hormona proteica y cómo actúa una esteroide.</li>
+      <li>Nombrar los tipos de efectos: sinergia, antagonismo, trófico, estimulación e inhibición.</li>
+    </ul>
+  </div>
+
+  <h2>Endocrinas, exocrinas y mixtas</h2>
+  <p>Una <b>glándula</b> es un grupo de células especializadas en fabricar y liberar sustancias. La pregunta clave para clasificarla es: <b>¿adónde va lo que fabrica?</b></p>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th></th><th>¿Adónde secreta?</th><th>¿Tiene conducto?</th><th>Ejemplos</th></tr></thead>
+    <tbody>
+      <tr><td><b>Exocrina</b> (exo = afuera)</td><td>Hacia el exterior del cuerpo o hacia una cavidad (como el tubo digestivo)</td><td>Sí</td><td>Sudoríparas, salivales, sebáceas, lagrimales, mamarias</td></tr>
+      <tr><td><b>Endocrina</b> (endo = adentro)</td><td>Al líquido intersticial y de ahí a la <b>sangre</b></td><td>No</td><td>Hipófisis, tiroides, suprarrenales, pineal</td></tr>
+      <tr><td><b>Mixta</b></td><td>Hace las dos cosas</td><td>Parte sí, parte no</td><td><b>Páncreas</b> (jugo pancreático + insulina/glucagón); gónadas (gametos + hormonas)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>¿Qué es una hormona?</h2>
+  <p>El nombre lo inventaron Starling y Bayliss a principios del siglo XX, cuando descubrieron que el intestino liberaba una sustancia (la secretina) que, viajando por la sangre, hacía trabajar al páncreas. Fue la prueba de que en el cuerpo también hay <b>mensajes químicos a distancia</b>.</p>
+  <div class="box key">
+    <span class="box-title">🔑 Características generales de las hormonas</span>
+    <ul>
+      <li>Se producen en <b>cantidades muy pequeñas</b>.</li>
+      <li>Se liberan al <b>espacio intercelular</b> y <b>viajan por la sangre</b>.</li>
+      <li>Actúan sobre tejidos que pueden estar <b>lejos</b> del lugar donde se fabricaron.</li>
+      <li>Solo actúan sobre <b>células blanco</b> (diana): las que tienen <b>receptores específicos</b>.</li>
+      <li>Su efecto es <b>proporcional a su concentración</b>.</li>
+      <li>Su producción y su degradación están <b>estrictamente controladas</b>.</li>
+    </ul>
+  </div>
+  <div class="box think"><span class="box-title">🧠 Llave y cerradura</span>La hormona es una llave y el receptor es la cerradura. La llave pasa por todas las puertas del cuerpo, pero solo abre las que tienen su cerradura. Por eso la TSH, aunque circula por todo el cuerpo, solo hace trabajar a la tiroides.</div>
+
+  <h2>Cómo "lee" la célula el mensaje: el mecanismo de acción</h2>
+  <p>Según su química, las hormonas se dividen en dos grandes grupos, y eso define cómo entran (o no) a la célula:</p>
+  <div class="two-col">
+    <div class="box">
+      <span class="box-title">🔹 Hormonas proteicas / peptídicas (y la mayoría de las aminas)</span>
+      Derivan de aminoácidos. Son solubles en agua, así que <b>no atraviesan la membrana</b>: se unen a un <b>receptor de membrana</b>. La hormona es el <b>primer mensajero</b>; adentro, una molécula como el <b>AMPc</b> (<b>segundo mensajero</b>) activa enzimas que producen la respuesta. Es una respuesta <b>rápida</b>.<br><i>Ej.: insulina, glucagón, ADH, oxitocina, hormonas hipofisarias, adrenalina.</i>
+    </div>
+    <div class="box">
+      <span class="box-title">🔸 Hormonas esteroides</span>
+      Derivan del <b>colesterol</b>, así que son lipídicas y <b>atraviesan la membrana</b>. Se unen a un <b>receptor intracelular</b>; el complejo hormona-receptor entra al núcleo y <b>modifica la transcripción de genes</b>, de modo que la célula fabrica proteínas nuevas. Es una respuesta más lenta pero duradera.<br><i>Ej.: cortisol, aldosterona, estrógenos, progesterona, testosterona.</i>
+    </div>
+  </div>
+  <p class="small muted">Las hormonas tiroideas (T3/T4) derivan de un aminoácido, pero se comportan como las esteroides: entran a la célula y actúan sobre los genes.</p>
+
+  <h2>Cómo se combinan los efectos</h2>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th>Efecto</th><th>Qué significa</th><th>Ejemplo</th></tr></thead>
+    <tbody>
+      <tr><td><b>Sinergia</b></td><td>Dos hormonas juntas producen más efecto que por separado</td><td>GH y hormonas tiroideas en el crecimiento</td></tr>
+      <tr><td><b>Antagonismo</b></td><td>Efectos opuestos sobre lo mismo</td><td>Insulina ↓ y glucagón ↑ la glucemia; calcitonina y PTH sobre el calcio</td></tr>
+      <tr><td><b>Trófico</b></td><td>Una hormona estimula a otra glándula endocrina</td><td>TSH, ACTH, FSH, LH</td></tr>
+      <tr><td><b>Estimulación</b></td><td>Promueve la actividad de un tejido</td><td>Prolactina sobre la glándula mamaria</td></tr>
+      <tr><td><b>Inhibición</b></td><td>Reduce la actividad de un tejido</td><td>Somatostatina sobre la GH</td></tr>
+    </tbody>
+  </table></div>
+  <p>Además, según su alcance, una hormona puede tener <b>acción generalizada</b> (actúa en muchos órganos, como la insulina) o <b>localizada</b> (actúa en un tejido puntual). Y existen <b>hormonas locales</b>, como las <b>prostaglandinas</b>: derivan de ácidos grasos y actúan sobre la misma célula (<i>autocrinas</i>) o sus vecinas (<i>paracrinas</i>). Participan en la inflamación, el dolor y las contracciones uterinas; la aspirina funciona porque inhibe su síntesis.</p>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar, después abrí</summary>
+    <ol>
+      <li>¿Por qué el páncreas es una glándula mixta?<span class="ans">Exocrina: jugo pancreático al intestino. Endocrina: insulina y glucagón a la sangre.</span></li>
+      <li>Nombrá 4 características de las hormonas.<span class="ans">Poca cantidad, viajan por sangre, actúan lejos, necesitan receptor específico, efecto proporcional a la concentración.</span></li>
+      <li>¿Por qué una esteroide puede entrar a la célula y una proteica no?<span class="ans">La esteroide es lipídica (deriva del colesterol) y atraviesa la membrana; la proteica es hidrosoluble.</span></li>
+      <li>Da un ejemplo de antagonismo.<span class="ans">Insulina y glucagón.</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 3 EJE -->
+<section class="page" id="eje" tabindex="-1" data-title="3 · Hipotálamo-hipófisis">
+  <p class="eyebrow">Capítulo 3 · El centro de comando</p>
+  <h1>El eje hipotálamo-hipofisario: el "director" y su "gerente"</h1>
+
+  <div class="box goal">
+    <span class="box-title">🎯 Al terminar vas a poder…</span>
+    <ul>
+      <li>Ubicar la hipófisis y nombrar sus divisiones y su origen.</li>
+      <li>Explicar las dos formas en que el hipotálamo controla la hipófisis.</li>
+      <li>Nombrar las hormonas de la adenohipófisis y de la neurohipófisis, y sus blancos.</li>
+    </ul>
+  </div>
+
+  <div class="box think">
+    <span class="box-title">🤔 Antes de leer</span>
+    Se suele decir que la hipófisis es la "glándula maestra". Pero ¿a quién obedece la hipófisis? Guardá esa pregunta.
+  </div>
+
+  <h2>La hipófisis: pequeña pero poderosa</h2>
+  <p>La <b>hipófisis</b> (o pituitaria) es una glándula del tamaño de un garbanzo ubicada en la <b>base del cerebro</b>, alojada en una cavidad del hueso esfenoides (la silla turca) y colgando del hipotálamo por un tallo, el <b>infundíbulo</b>. En realidad son <b>dos glándulas distintas</b> pegadas, con orígenes embrionarios diferentes:</p>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th></th><th>Adenohipófisis (anterior)</th><th>Neurohipófisis (posterior)</th></tr></thead>
+    <tbody>
+      <tr><td>Origen</td><td>Tejido del techo de la boca embrionaria (bolsa de Rathke)</td><td>Extensión del encéfalo (tejido nervioso)</td></tr>
+      <tr><td>Naturaleza</td><td>Una glándula endocrina <b>verdadera</b>: fabrica sus hormonas</td><td><b>No fabrica</b>: almacena y libera hormonas del hipotálamo</td></tr>
+      <tr><td>Conexión con el hipotálamo</td><td>Por la <b>sangre</b>: sistema porta hipotálamo-hipofisario</td><td>Por <b>axones</b> de neuronas hipotalámicas</td></tr>
+      <tr><td>Hormonas</td><td>GH, prolactina, TSH, ACTH, FSH, LH</td><td>ADH (vasopresina) y oxitocina</td></tr>
+    </tbody>
+  </table></div>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 340 420" role="img" aria-label="Esquema del eje hipotálamo-hipófisis: el hipotálamo controla la adenohipófisis por el sistema porta y la neurohipófisis por axones; cada una libera sus hormonas hacia sus órganos blanco">
+      <rect class="node-h" x="70" y="10" width="200" height="50" rx="12"/>
+      <text x="170" y="32" text-anchor="middle" class="lbl-b">HIPOTÁLAMO</text>
+      <text x="170" y="50" text-anchor="middle" class="lbl-s">neuronas neurosecretoras</text>
+      <path class="pos" d="M120 62 L80 130"/><text x="4" y="90" class="lbl-s">sangre</text><text x="4" y="104" class="lbl-s">(sist. porta)</text>
+      <text x="110" y="100" class="lbl-s">TRH, CRH,</text><text x="110" y="113" class="lbl-s">GnRH, GHRH…</text>
+      <path class="pos" d="M220 62 L260 130"/><text x="292" y="96" class="lbl-s" text-anchor="middle">axones</text>
+      <text x="232" y="106" class="lbl-s" text-anchor="end">ADH,</text><text x="232" y="119" class="lbl-s" text-anchor="end">oxitocina</text>
+      <rect class="node-p" x="10" y="134" width="150" height="46" rx="12"/>
+      <text x="85" y="154" text-anchor="middle" class="lbl-b">ADENOHIPÓFISIS</text><text x="85" y="170" text-anchor="middle" class="lbl-s">fabrica y libera</text>
+      <rect class="node-p" x="190" y="134" width="140" height="46" rx="12"/>
+      <text x="260" y="154" text-anchor="middle" class="lbl-b">NEUROHIPÓFISIS</text><text x="260" y="170" text-anchor="middle" class="lbl-s">solo almacena y libera</text>
+      <!-- adeno → blancos -->
+      <g class="lbl">
+        <path class="pos" d="M85 182 L85 206"/>
+        <rect class="node-g" x="10" y="210" width="150" height="190" rx="12"/>
+        <text x="20" y="232">TSH → tiroides</text>
+        <text x="20" y="256">ACTH → corteza</text>
+        <text x="20" y="272" class="lbl-s">suprarrenal</text>
+        <text x="20" y="296">FSH y LH → gónadas</text>
+        <text x="20" y="320">GH → huesos, hígado,</text>
+        <text x="20" y="336" class="lbl-s">casi todos los tejidos</text>
+        <text x="20" y="360">Prolactina → glándula</text>
+        <text x="20" y="376" class="lbl-s">mamaria</text>
+      </g>
+      <g class="lbl">
+        <path class="pos" d="M260 182 L260 206"/>
+        <rect class="node-g" x="190" y="210" width="140" height="110" rx="12"/>
+        <text x="200" y="234">ADH → riñón</text>
+        <text x="200" y="250" class="lbl-s">(retiene agua)</text>
+        <text x="200" y="276">Oxitocina → útero</text>
+        <text x="200" y="292" class="lbl-s">y glándula mamaria</text>
+      </g>
+      <text x="260" y="350" text-anchor="middle" class="lbl-s">TSH, ACTH, FSH, LH</text>
+      <text x="260" y="365" text-anchor="middle" class="lbl-s">= hormonas tróficas</text>
+      <text x="260" y="380" text-anchor="middle" class="lbl-s">(mandan sobre otras</text>
+      <text x="260" y="395" text-anchor="middle" class="lbl-s">glándulas)</text>
+    </svg>
+    <figcaption>El hipotálamo controla las dos partes de la hipófisis, pero por caminos distintos.</figcaption>
+  </figure>
+
+  <h2>El hipotálamo: el verdadero director</h2>
+  <p>El <b>hipotálamo</b> es una pequeña región del encéfalo que recibe información de todo el sistema nervioso (emociones, temperatura, luz, hambre, estrés) y la traduce en órdenes hormonales. Es el <b>enlace entre el sistema nervioso y el endocrino</b>: un órgano <b>neuroendocrino</b>. Controla la hipófisis de dos maneras:</p>
+  <ol>
+    <li><b>Hacia la adenohipófisis, por la sangre.</b> Sus neuronas liberan <b>hormonas liberadoras</b> (que estimulan) o <b>inhibidoras</b> (que frenan) en una red de capilares especial, el <b>sistema porta hipotálamo-hipofisario</b>, que las lleva directo a la adenohipófisis sin pasar por la circulación general.</li>
+    <li><b>Hacia la neurohipófisis, por axones.</b> Otras neuronas fabrican <b>ADH</b> y <b>oxitocina</b>, las transportan por sus axones hasta la neurohipófisis y allí las liberan a la sangre cuando reciben un impulso nervioso.</li>
+  </ol>
+  <div class="box key"><span class="box-title">🔑 Respuesta a la pregunta del principio</span>La hipófisis es la "glándula maestra" porque manda sobre la tiroides, las suprarrenales y las gónadas. Pero <b>obedece al hipotálamo</b>. Si la hipófisis es la gerente, el hipotálamo es el director.</div>
+
+  <h3>Hormonas hipotalámicas y su "pareja" hipofisaria</h3>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th>Hipotálamo libera…</th><th>…que actúa sobre la adenohipófisis</th></tr></thead>
+    <tbody>
+      <tr><td><b>TRH</b> (liberadora de tirotrofina)</td><td>↑ <b>TSH</b></td></tr>
+      <tr><td><b>CRH</b> (liberadora de corticotrofina)</td><td>↑ <b>ACTH</b></td></tr>
+      <tr><td><b>GnRH</b> (liberadora de gonadotrofinas)</td><td>↑ <b>FSH</b> y <b>LH</b></td></tr>
+      <tr><td><b>GHRH</b> (liberadora de hormona de crecimiento)</td><td>↑ <b>GH</b></td></tr>
+      <tr><td><b>Somatostatina</b> (inhibidora)</td><td>↓ <b>GH</b></td></tr>
+      <tr><td><b>Dopamina</b> (inhibidora de prolactina)</td><td>↓ <b>Prolactina</b></td></tr>
+    </tbody>
+  </table></div>
+  <div class="box think"><span class="box-title">🧠 Truco para recordar</span>El nombre de la hormona hipotalámica casi siempre es el de la hipofisaria + "RH" (<i>releasing hormone</i>, hormona liberadora): T<b>RH</b> → <b>T</b>SH, C<b>RH</b> → A<b>C</b>TH (cortico), Gn<b>RH</b> → gonadotrofinas.</div>
+
+  <h2>Las hormonas de la adenohipófisis</h2>
+  <ul>
+    <li><b>Somatotrofina u hormona del crecimiento (GH):</b> estimula la síntesis de proteínas y el crecimiento de huesos y tejidos blandos (en parte a través de las somatomedinas que fabrica el hígado). También sube la glucemia.</li>
+    <li><b>Prolactina (PRL):</b> estimula la producción de leche.</li>
+    <li><b>Tirotrofina (TSH):</b> estimula a la tiroides a producir T3 y T4.</li>
+    <li><b>Corticotrofina (ACTH):</b> estimula a la corteza suprarrenal a producir cortisol.</li>
+    <li><b>Folículo estimulante (FSH)</b> y <b>luteinizante (LH)</b>, las <b>gonadotrofinas</b>: actúan sobre ovarios y testículos.</li>
+  </ul>
+  <p class="small muted">En muchos vertebrados el lóbulo intermedio produce la hormona estimulante de los melanocitos (MSH), que interviene en los cambios de color. En humanos su función no está clara.</p>
+
+  <h2>Las hormonas de la neurohipófisis</h2>
+  <ul>
+    <li><b>ADH (antidiurética) o vasopresina:</b> hace que el riñón reabsorba agua, así que se orina menos. Se libera cuando la sangre está muy concentrada (deshidratación).</li>
+    <li><b>Oxitocina:</b> provoca las contracciones del útero durante el parto y la <b>eyección</b> de leche durante la lactancia. También participa en el vínculo afectivo (lo vas a ver en la sección 6).</li>
+  </ul>
+  <div class="box trap"><span class="box-title">⚠️ Trampas típicas</span>
+    <ol>
+      <li>"La neurohipófisis fabrica ADH y oxitocina." <b>Falso:</b> las fabrica el <b>hipotálamo</b>; la neurohipófisis las almacena y libera.</li>
+      <li>Confundir <b>ACTH</b> (adenohipófisis → suprarrenal) con <b>ADH</b> (neurohipófisis → riñón).</li>
+      <li>Creer que la prolactina "saca" la leche: la <b>produce</b>. La que la <b>eyecta</b> es la oxitocina.</li>
+    </ol>
+  </div>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar, después abrí</summary>
+    <ol>
+      <li>¿Por qué se dice que la hipófisis son "dos glándulas en una"?<span class="ans">Distinto origen (boca embrionaria vs. tejido nervioso), distinta conexión (sangre vs. axones) y distintas hormonas.</span></li>
+      <li>¿Qué es el sistema porta hipotálamo-hipofisario?<span class="ans">La red de capilares que lleva las hormonas liberadoras/inhibidoras del hipotálamo a la adenohipófisis.</span></li>
+      <li>Nombrá las 6 hormonas de la adenohipófisis.<span class="ans">GH, prolactina, TSH, ACTH, FSH, LH.</span></li>
+      <li>¿Qué hormona hipotalámica estimula la liberación de ACTH?<span class="ans">CRH.</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 4 REGULACIÓN -->
+<section class="page" id="regulacion" tabindex="-1" data-title="4 · Retroalimentación">
+  <p class="eyebrow">Capítulo 4 · Cómo se frena (y se acelera) el sistema</p>
+  <h1>Mecanismos de liberación y retroalimentación</h1>
+
+  <div class="box goal">
+    <span class="box-title">🎯 Al terminar vas a poder…</span>
+    <ul>
+      <li>Explicar y dibujar un circuito de retroalimentación negativa.</li>
+      <li>Dar ejemplos de retroalimentación positiva.</li>
+      <li>Nombrar los otros estímulos que liberan hormonas: nerviosos, químicos y ritmos.</li>
+    </ul>
+  </div>
+
+  <h2>¿Qué dispara la liberación de una hormona?</h2>
+  <p>Una glándula libera su hormona cuando recibe alguno de estos estímulos:</p>
+  <ul>
+    <li><b>Hormonal:</b> otra hormona se lo ordena (TSH → tiroides).</li>
+    <li><b>Humoral (químico de la sangre):</b> la glándula "mide" algo en la sangre (la glucosa → insulina; el calcio → PTH).</li>
+    <li><b>Nervioso:</b> un nervio la estimula (simpático → médula suprarrenal → adrenalina).</li>
+    <li><b>Ritmos:</b> ciclos ambientales como el día y la noche (luz → melatonina), o ritmos propios como el ciclo menstrual.</li>
+  </ul>
+
+  <h2>Retroalimentación negativa: el termostato del cuerpo</h2>
+  <p>Pensá en el aire acondicionado: cuando la habitación llega a 24 °C, el termostato <b>apaga</b> el equipo. Si sube de nuevo, lo prende. El resultado es que la temperatura se mantiene estable. La <b>retroalimentación negativa</b> es exactamente eso: <b>el producto final frena su propia producción</b>. Es el mecanismo <b>más frecuente</b> del sistema endocrino y la base de la homeostasis.</p>
+
+  <figure class="fig-card">
+    <svg viewBox="0 0 340 360" role="img" aria-label="Circuito de retroalimentación negativa del eje del estrés: estímulo, hipotálamo libera CRH, adenohipófisis libera ACTH, corteza suprarrenal libera cortisol que produce respuestas y frena al hipotálamo y a la hipófisis">
+      <rect class="node" x="140" y="8" width="110" height="30" rx="8"/><text x="195" y="28" text-anchor="middle" class="lbl">Estímulo (estrés)</text>
+      <path class="pos" d="M195 40 L195 58"/>
+      <rect class="node-h" x="130" y="62" width="130" height="40" rx="12"/><text x="195" y="87" text-anchor="middle" class="lbl-b">Hipotálamo</text>
+      <path class="pos" d="M195 104 L195 138"/><text x="203" y="126" class="lbl">CRH  (+)</text>
+      <rect class="node-p" x="130" y="142" width="130" height="40" rx="12"/><text x="195" y="167" text-anchor="middle" class="lbl-b">Adenohipófisis</text>
+      <path class="pos" d="M195 184 L195 218"/><text x="203" y="206" class="lbl">ACTH  (+)</text>
+      <rect class="node-g" x="120" y="222" width="150" height="40" rx="12"/><text x="195" y="247" text-anchor="middle" class="lbl-b">Corteza suprarrenal</text>
+      <path class="pos" d="M195 264 L195 298"/><text x="203" y="286" class="lbl">cortisol</text>
+      <rect class="node-r" x="110" y="302" width="170" height="44" rx="12"/><text x="195" y="321" text-anchor="middle" class="lbl-b">Respuesta</text><text x="195" y="337" text-anchor="middle" class="lbl-s">↑ glucemia, energía disponible</text>
+      <path class="neg" d="M118 236 C 66 220, 66 104, 126 84"/>
+      <path class="neg" d="M118 248 C 96 236, 96 180, 126 166"/>
+      <text x="4" y="150" class="t-neg">−</text><text x="4" y="168" class="lbl-s">el cortisol</text><text x="4" y="182" class="lbl-s">frena</text><text x="4" y="196" class="lbl-s">arriba</text>
+    </svg>
+    <figcaption>Flechas verdes (+): estimulan. Flechas rojas punteadas (−): retroalimentación negativa.</figcaption>
+  </figure>
+
+  <h3>Cómo se lee el circuito</h3>
+  <ol>
+    <li>Un estímulo (estrés) llega al hipotálamo → libera <b>CRH</b>.</li>
+    <li>La CRH estimula a la adenohipófisis → libera <b>ACTH</b>.</li>
+    <li>La ACTH estimula a la corteza suprarrenal → libera <b>cortisol</b>, que produce la respuesta.</li>
+    <li>Cuando el cortisol en sangre sube lo suficiente, <b>frena</b> al hipotálamo y a la hipófisis: baja la CRH, baja la ACTH y, en consecuencia, baja el cortisol.</li>
+  </ol>
+  <p>El mismo esquema vale para la tiroides (TRH → TSH → T3/T4) y para las gónadas (GnRH → FSH/LH → estrógenos, progesterona y testosterona). Si aprendés a dibujar uno, sabés dibujar los tres.</p>
+
+  <div class="box key">
+    <span class="box-title">🔑 La regla que resuelve casi todos los casos</span>
+    <ul>
+      <li>Si la hormona final está <b>alta</b> → las de arriba <b>bajan</b>.</li>
+      <li>Si la hormona final está <b>baja</b> → las de arriba <b>suben</b> (no hay freno).</li>
+    </ul>
+    Ej.: sin yodo no hay T3/T4 → la TSH sube sin control → la tiroides crece (bocio).
+  </div>
+
+  <h3>Otros circuitos negativos (sin hipófisis)</h3>
+  <ul>
+    <li><b>Glucemia:</b> sube la glucosa → insulina → baja la glucosa → deja de liberarse insulina. Baja la glucosa → glucagón → sube.</li>
+    <li><b>Calcio:</b> baja el calcio → parathormona → sube el calcio. Sube el calcio → calcitonina → baja.</li>
+    <li><b>Agua:</b> sangre concentrada → ADH → se retiene agua → la sangre se diluye → baja la ADH.</li>
+  </ul>
+
+  <h2>Retroalimentación positiva: el efecto bola de nieve</h2>
+  <p>Es menos frecuente: el producto <b>refuerza</b> el estímulo, y el proceso se acelera hasta que algo externo lo termina. Sirve para procesos que tienen que completarse sí o sí.</p>
+  <ul>
+    <li><b>Parto:</b> la cabeza del bebé presiona el cuello del útero → se libera oxitocina → más contracciones → más presión → más oxitocina… hasta que nace el bebé.</li>
+    <li><b>Lactancia:</b> la succión estimula la oxitocina (eyección) y la prolactina (producción). Más succión, más leche; cuando el bebé deja de mamar, se corta.</li>
+    <li><b>Ovulación:</b> los estrógenos altos provocan un pico de LH que desencadena la ovulación.</li>
+  </ul>
+  <div class="box trap"><span class="box-title">⚠️ "Negativa" no significa "mala"</span>Negativa = se opone al cambio (estabiliza). Positiva = amplifica el cambio. No tiene nada que ver con que sea buena o mala para la salud.</div>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar: dibujá en tu hoja el eje del cortisol con sus flechas + y −</summary>
+    <ol>
+      <li>¿Qué pasa con la TSH si la tiroides produce poca T3/T4?<span class="ans">Sube, porque falta el freno.</span></li>
+      <li>Da dos ejemplos de retroalimentación positiva.<span class="ans">Oxitocina en el parto; pico de LH en la ovulación; lactancia.</span></li>
+      <li>Nombrá cuatro tipos de estímulos que liberan hormonas.<span class="ans">Hormonal, humoral (químico), nervioso y ritmos.</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 5 GLÁNDULAS -->
+<section class="page" id="glandulas" tabindex="-1" data-title="5 · Glándula por glándula">
+  <p class="eyebrow">Capítulo 5 · El mapa completo</p>
+  <h1>Principales glándulas y hormonas, una por una</h1>
+  <p class="lead">Para cada glándula, preguntate siempre lo mismo: <b>¿dónde está? ¿qué hormona fabrica? ¿qué hace? ¿quién la regula? ¿qué pasa si sobra o falta?</b></p>
+
+  <h2>El cuadro (completalo primero en tu hoja, después compará)</h2>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th>Glándula</th><th>Localización</th><th>Hormona</th><th>Acción principal</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="2"><b>Hipófisis</b></td><td rowspan="2">Base del cerebro, debajo del hipotálamo</td><td>Adeno: GH, PRL, TSH, ACTH, FSH, LH</td><td>Crecimiento, leche y control de otras glándulas</td></tr>
+      <tr><td>Neuro: ADH, oxitocina (del hipotálamo)</td><td>Retener agua; parto y eyección de leche</td></tr>
+      <tr><td rowspan="2"><b>Tiroides</b></td><td rowspan="2">Cuello, delante de la tráquea</td><td>T3 y T4 (tiroxina)</td><td>Aumentan el metabolismo; desarrollo del sistema nervioso</td></tr>
+      <tr><td>Calcitonina</td><td>Baja el calcio en sangre</td></tr>
+      <tr><td><b>Paratiroides</b></td><td>Detrás de la tiroides (4 pequeñas)</td><td>Parathormona (PTH)</td><td>Sube el calcio en sangre</td></tr>
+      <tr><td rowspan="2"><b>Suprarrenales</b></td><td rowspan="2">Sobre cada riñón</td><td>Corteza: cortisol, aldosterona, andrógenos</td><td>Estrés y glucemia; sodio y agua; caracteres sexuales</td></tr>
+      <tr><td>Médula: adrenalina y noradrenalina</td><td>Respuesta de lucha o huida</td></tr>
+      <tr><td><b>Páncreas</b></td><td>Abdomen, detrás del estómago</td><td>Insulina (β), glucagón (α), somatostatina (δ)</td><td>Bajar / subir la glucemia; regular a las otras dos</td></tr>
+      <tr><td><b>Ovarios</b></td><td>Pelvis, a los lados del útero</td><td>Estrógenos, progesterona</td><td>Caracteres sexuales femeninos; ciclo menstrual; embarazo</td></tr>
+      <tr><td><b>Testículos</b></td><td>Escroto</td><td>Testosterona</td><td>Espermatogénesis; caracteres sexuales masculinos</td></tr>
+      <tr><td><b>Pineal</b></td><td>Centro del encéfalo</td><td>Melatonina</td><td>Ritmos circadianos (sueño-vigilia)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Tiroides</h2>
+  <p>Tiene forma de mariposa y está en el cuello. Produce dos hormonas:</p>
+  <ul>
+    <li><b>T3 y T4 (tiroxina):</b> necesitan <b>yodo</b> para fabricarse. Aceleran la respiración celular (el metabolismo) de casi todo el cuerpo y son fundamentales para el desarrollo del sistema nervioso en la infancia. Se regulan por el eje TRH → TSH → T3/T4.</li>
+    <li><b>Calcitonina:</b> la fabrican las células parafoliculares cuando el calcio está alto e inhibe la liberación de calcio del hueso.</li>
+  </ul>
+  <div class="two-col">
+    <div class="box"><span class="box-title">⬇️ Hipotiroidismo (poca T3/T4)</span>Cansancio, lentitud, intolerancia al frío, piel seca, aumento de peso y ánimo bajo. En la infancia puede afectar de forma permanente el desarrollo neurológico y el crecimiento. Si se debe a falta de yodo: <b>bocio</b>.</div>
+    <div class="box"><span class="box-title">⬆️ Hipertiroidismo (mucha T3/T4)</span>Nerviosismo, insomnio, excitabilidad, taquicardia, intolerancia al calor, sudoración y pérdida de peso.</div>
+  </div>
+
+  <h2>Paratiroides</h2>
+  <p>Son las glándulas endocrinas más pequeñas. Producen <b>parathormona (PTH)</b>, que <b>sube el calcio</b> en sangre por tres vías: lo libera del <b>hueso</b>, reduce su pérdida por el <b>riñón</b> y activa la <b>vitamina D</b> para que el <b>intestino</b> absorba más. El calcio es vital para la coagulación, la contracción muscular y la función nerviosa.</p>
+
+  <h2>Suprarrenales: dos glándulas en una</h2>
+  <p>Están sobre los riñones y tienen dos partes con funciones distintas:</p>
+  <p><b>Corteza</b> (la capa externa; produce esteroides). De afuera hacia adentro tiene tres zonas: <i>"sal, azúcar y sexo"</i>.</p>
+  <ul>
+    <li><b>Zona glomerular → mineralocorticoides (aldosterona):</b> el riñón retiene sodio (y con él, agua). "Sal".</li>
+    <li><b>Zona fasciculada → glucocorticoides (cortisol):</b> fabrica glucosa a partir de proteínas y lípidos, prioriza el cerebro y el corazón, y suprime la inflamación y la inmunidad. Se regula por CRH → ACTH. "Azúcar".</li>
+    <li><b>Zona reticular → andrógenos</b> (hormonas sexuales, en pequeñas cantidades). "Sexo".</li>
+  </ul>
+  <p><b>Médula</b> (el centro; células neurosecretoras controladas por el <b>simpático</b>): libera <b>adrenalina y noradrenalina</b> (catecolaminas). Aceleran y fortalecen el latido, suben la presión, dilatan los bronquios y suben la glucemia: la respuesta de <b>lucha o huida</b>.</p>
+
+  <h2>Páncreas endocrino</h2>
+  <p>Los <b>islotes de Langerhans</b> son "islas" endocrinas dentro de un páncreas mayormente exocrino.</p>
+  <ul>
+    <li><b>Células β → insulina:</b> se libera cuando sube la glucosa (después de comer). Hace que las células capten glucosa y que el hígado la guarde como glucógeno: <b>baja la glucemia</b> (hipoglucemiante).</li>
+    <li><b>Células α → glucagón:</b> se libera cuando baja la glucosa. Hace que el hígado degrade el glucógeno y libere glucosa: <b>sube la glucemia</b> (hiperglucemiante).</li>
+    <li><b>Células δ → somatostatina:</b> inhibe a la insulina y al glucagón y regula la digestión.</li>
+  </ul>
+  <p>En la <b>diabetes mellitus</b> falta insulina (o las células no le responden): la glucosa queda en la sangre, se pierde por la orina y arrastra agua (sed y mucha orina). El control de la glucemia es tan estricto porque <b>el cerebro casi solo usa glucosa</b> como fuente de energía: participan al menos siete hormonas (GH, cortisol, adrenalina, noradrenalina, insulina, glucagón y somatostatina), y la única que la baja es la insulina.</p>
+  <div class="box trap"><span class="box-title">⚠️ Glucagón ≠ glucógeno</span><b>Glucagón</b> es la hormona. <b>Glucógeno</b> es la reserva de glucosa en el hígado y el músculo. El glucagón hace que se rompa el glucógeno.</div>
+
+  <h2>Pineal</h2>
+  <p>Está en el centro del encéfalo y secreta <b>melatonina</b> con un ritmo diario: <b>alta de noche</b> y baja de día. La <b>luz</b> durante la noche interrumpe su producción. Funciona como un "calendario biológico": regula los ritmos circadianos (sueño-vigilia) y, en muchos animales, los ciclos reproductivos estacionales. Se estudia como <b>cronobiótico</b> (algo que "corre las agujas" del reloj biológico), por ejemplo para el jet lag.</p>
+
+  <h2>Gónadas</h2>
+  <ul>
+    <li><b>Ovarios:</b> el folículo produce <b>estrógenos</b> (caracteres sexuales secundarios femeninos, crecimiento del endometrio) y el cuerpo lúteo, <b>progesterona</b> (mantiene el endometrio y el embarazo).</li>
+    <li><b>Testículos:</b> producen <b>testosterona</b> (espermatogénesis, caracteres sexuales secundarios masculinos, masa muscular).</li>
+  </ul>
+  <p>Ambos se regulan por el eje GnRH → FSH/LH → esteroides sexuales (más detalle en la sección 7).</p>
+
+  <h2>Otras hormonas para conocer</h2>
+  <ul>
+    <li><b>Leptina</b> (tejido adiposo): da <b>saciedad</b>; actúa en el hipotálamo frenando la ingesta.</li>
+    <li><b>Grelina</b> (estómago): da <b>hambre</b> (es orexígena).</li>
+    <li><b>Hormonas intestinales</b> como secretina, CCK, GLP-1 y PYY: regulan la digestión y la saciedad.</li>
+    <li><b>Eritropoyetina (EPO)</b> (riñón): estimula la producción de glóbulos rojos. Es famosa por su uso como dopaje.</li>
+  </ul>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar, después abrí</summary>
+    <ol>
+      <li>Nombrá las tres zonas de la corteza suprarrenal y qué producen.<span class="ans">Glomerular: aldosterona; fasciculada: cortisol; reticular: andrógenos.</span></li>
+      <li>¿Qué hormonas regulan el calcio y en qué sentido?<span class="ans">PTH lo sube; calcitonina lo baja.</span></li>
+      <li>Diferencia entre médula y corteza suprarrenal.<span class="ans">Corteza: esteroides, regulada por ACTH. Médula: catecolaminas, controlada por el simpático.</span></li>
+      <li>¿Qué hace la luz con la melatonina?<span class="ans">La inhibe.</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 6 CONDUCTA -->
+<section class="page" id="conducta" tabindex="-1" data-title="6 · Hormonas y conducta">
+  <p class="eyebrow">Capítulo 6 · Lo que sentís también es química</p>
+  <h1>Hormonas y conducta</h1>
+
+  <div class="box goal">
+    <span class="box-title">🎯 Al terminar vas a poder…</span>
+    <ul>
+      <li>Describir la respuesta hormonal al estrés agudo y al crónico.</li>
+      <li>Dar ejemplos de hormonas que influyen en el ánimo, el sueño, el apetito, los vínculos y la conducta sexual.</li>
+      <li>Explicar qué es el eje intestino-cerebro y sus vías.</li>
+    </ul>
+  </div>
+
+  <p class="lead">La relación funciona en las dos direcciones. Las <b>hormonas modifican la conducta</b> (actúan sobre receptores en el cerebro), y la <b>conducta y las experiencias modifican las hormonas</b> (un examen, una discusión o un abrazo cambian lo que liberan tus glándulas).</p>
+
+  <h2>El estrés: dos ejes, dos velocidades</h2>
+  <p>Ante una amenaza (real o imaginada), el cerebro activa dos sistemas en paralelo:</p>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th></th><th>Eje simpático-médula suprarrenal</th><th>Eje hipotálamo-hipófisis-suprarrenal (HHA)</th></tr></thead>
+    <tbody>
+      <tr><td>Camino</td><td>Hipotálamo → nervios simpáticos → <b>médula</b> suprarrenal</td><td>Hipotálamo (CRH) → adenohipófisis (ACTH) → <b>corteza</b> suprarrenal</td></tr>
+      <tr><td>Hormona</td><td>Adrenalina y noradrenalina</td><td>Cortisol</td></tr>
+      <tr><td>Velocidad</td><td>Segundos</td><td>Minutos</td></tr>
+      <tr><td>Efecto</td><td>Corazón rápido, presión alta, bronquios dilatados, glucosa disponible</td><td>Más glucosa sostenida, energía priorizada para cerebro y corazón, menos inflamación</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Estrés agudo vs. crónico</h3>
+  <ul>
+    <li><b>Agudo:</b> breve y adaptativo. Te ayuda a responder (el deportista en la largada, frenar de golpe el auto).</li>
+    <li><b>Crónico:</b> dura semanas o meses (problemas económicos, laborales, de pareja). El cortisol se mantiene alto y lo que era útil se vuelve costoso: <b>deprime el sistema inmune</b> (más infecciones), y se asocia a hipertensión, alteraciones del sueño, del ánimo y de la memoria, y a cambios en la microbiota intestinal.</li>
+  </ul>
+  <div class="box key"><span class="box-title">🔑 Idea central</span>Un estado psicológico (sentirse amenazado durante mucho tiempo) tiene <b>efectos biológicos medibles</b>, mediados por hormonas. Es uno de los puentes más claros entre mente y cuerpo.</div>
+
+  <h2>Más hormonas que influyen en la conducta</h2>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th>Hormona</th><th>Conducta o estado que modula</th></tr></thead>
+    <tbody>
+      <tr><td><b>Hormonas tiroideas</b></td><td>Ánimo y energía: el hipotiroidismo da síntomas parecidos a la depresión; el hipertiroidismo, ansiedad e insomnio.</td></tr>
+      <tr><td><b>Melatonina</b></td><td>Sueño y ritmos circadianos.</td></tr>
+      <tr><td><b>Oxitocina</b></td><td>Vínculo madre-bebé, apego, confianza y conductas afiliativas.</td></tr>
+      <tr><td><b>Testosterona y estrógenos</b></td><td>Conducta sexual y, en parte, agresividad. En experimentos con animales, la manipulación de estas hormonas cambia el comportamiento de apareamiento.</td></tr>
+      <tr><td><b>Leptina y grelina</b></td><td>Saciedad y hambre: la conducta alimentaria. Sus alteraciones se relacionan con la obesidad, la anorexia y la bulimia.</td></tr>
+      <tr><td><b>Cortisol</b></td><td>Respuesta al estrés, alerta; en exceso crónico, ansiedad, ánimo bajo y problemas de memoria.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>¿Y mi alimentación en mis emociones? El eje intestino-cerebro</h2>
+  <p>Una línea de investigación reciente propone que el intestino y el cerebro "conversan" todo el tiempo. El <b>eje intestino-cerebro</b> es un sistema de comunicación <b>bidireccional</b> que incluye la <b>microbiota</b> (los billones de microorganismos del intestino), el sistema nervioso entérico, el autónomo, el neuroendocrino, el inmune y el sistema nervioso central.</p>
+  <h3>Antecedentes que apoyan la relación microbiota-estrés</h3>
+  <ul>
+    <li>El estrés altera la <b>motilidad</b> intestinal, la <b>barrera</b> intestinal, las secreciones y la <b>percepción visceral</b> (la sensibilidad del intestino).</li>
+    <li>El estrés se asocia a <b>disbiosis</b>: cambios en la composición normal de la microbiota.</li>
+    <li>Una microbiota <b>diversa y equilibrada</b> se asocia a mejor bienestar emocional, conectividad cerebral y rendimiento cognitivo.</li>
+  </ul>
+  <h3>Mecanismos propuestos (las vías de comunicación)</h3>
+  <ol>
+    <li><b>Vía nerviosa: el nervio vago.</b> Es la principal. Neuronas sensitivas del intestino llevan información al sistema nervioso central. Participan hormonas intestinales del apetito: la <b>grelina</b> (estimula la ingesta) y la CCK, el GLP-1 y el PYY (la frenan).</li>
+    <li><b>Vía circulatoria.</b> Por la sangre viajan sustancias producidas o moduladas por la microbiota: <b>serotonina</b>, dopamina, catecolaminas, <b>GABA</b>, <b>ácidos grasos de cadena corta</b> y <b>cortisol</b> (del eje hipotálamo-hipófisis-suprarrenal).</li>
+    <li><b>Vía inmune:</b> la microbiota modula la inflamación, que también "habla" con el cerebro.</li>
+  </ol>
+  <div class="box think"><span class="box-title">🧠 Pensamiento crítico</span>Los propios autores aclaran que la evidencia es <b>prometedora pero no concluyente</b>: es un campo joven. Si te preguntan, mostrá que conocés las vías propuestas <b>y</b> el grado de certeza. Saber cuánto se sabe también es saber.</div>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar, después abrí</summary>
+    <ol>
+      <li>¿Por qué la adrenalina actúa antes que el cortisol?<span class="ans">La médula se activa directamente por nervios; el cortisol requiere la cadena CRH → ACTH → corteza.</span></li>
+      <li>¿Por qué el estrés crónico enferma?<span class="ans">El cortisol sostenido suprime la inmunidad, entre otros efectos.</span></li>
+      <li>Nombrá las dos vías principales del eje intestino-cerebro.<span class="ans">Nervio vago y circulación (más la inmune).</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 7 DESARROLLO -->
+<section class="page" id="desarrollo" tabindex="-1" data-title="7 · Hormonas y desarrollo">
+  <p class="eyebrow">Capítulo 7 · De bebé a adulto</p>
+  <h1>Hormonas y desarrollo</h1>
+
+  <div class="box goal">
+    <span class="box-title">🎯 Al terminar vas a poder…</span>
+    <ul>
+      <li>Explicar el papel de la GH y de las hormonas tiroideas en el crecimiento.</li>
+      <li>Describir la pubertad y el ciclo menstrual desde las hormonas.</li>
+      <li>Explicar qué son los disruptores endocrinos.</li>
+    </ul>
+  </div>
+
+  <h2>Crecer: hormona de crecimiento y tiroides</h2>
+  <p>La <b>GH</b> y las <b>hormonas tiroideas</b> trabajan en <b>sinergia</b>: juntas logran un crecimiento que ninguna lograría sola.</p>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th>Alteración</th><th>Cuándo</th><th>Qué pasa</th></tr></thead>
+    <tbody>
+      <tr><td><b>Enanismo hipofisario</b></td><td>Falta de GH en la infancia</td><td>Estatura muy baja con <b>proporciones normales</b> (a diferencia de la acondroplasia, que no es hormonal y da proporciones anormales).</td></tr>
+      <tr><td><b>Gigantismo</b></td><td>Exceso de GH en la infancia</td><td>Los huesos se alargan mucho porque todavía pueden crecer.</td></tr>
+      <tr><td><b>Acromegalia</b></td><td>Exceso de GH en el adulto</td><td>Los huesos ya no se alargan: crecen las manos, los pies y la mandíbula.</td></tr>
+      <tr><td><b>Hipotiroidismo infantil</b></td><td>Falta de T3/T4 al nacer o en la infancia</td><td>Afecta el crecimiento y el desarrollo del sistema nervioso. Por eso a todos los recién nacidos se les hace un análisis para detectarlo.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>La pubertad</h2>
+  <p>Durante la infancia, el eje reproductivo está "dormido". En la pubertad el hipotálamo empieza a liberar <b>GnRH</b> en pulsos → la adenohipófisis libera <b>FSH y LH</b> → las gónadas producen <b>estrógenos y progesterona</b> (ovarios) o <b>testosterona</b> (testículos) → aparecen los <b>caracteres sexuales secundarios</b> (vello, cambios en la voz, desarrollo mamario, distribución de grasa y músculo) y comienza la capacidad reproductiva.</p>
+
+  <h2>El ciclo menstrual: una coreografía de cuatro hormonas</h2>
+  <p>Dura en promedio 28 días e involucra dos hormonas <b>hipofisarias</b> (FSH, LH), dos <b>ováricas</b> (estrógenos, progesterona) y cambios en el <b>endometrio</b> (la capa interna del útero).</p>
+  <figure class="fig-card">
+    <svg viewBox="0 0 340 250" role="img" aria-label="Curvas esquemáticas del ciclo menstrual: FSH y LH con un pico en el día 14, estrógenos que suben en la fase folicular, progesterona que sube en la fase lútea">
+      <rect x="30" y="20" width="50" height="190" fill="var(--bad-soft)"/>
+      <line x1="170" y1="20" x2="170" y2="210" stroke="var(--muted)" stroke-dasharray="3 3"/>
+      <line x1="30" y1="210" x2="310" y2="210" stroke="var(--muted)"/>
+      <text x="30" y="226" class="lbl-s">día 1</text><text x="170" y="226" text-anchor="middle" class="lbl-s">14</text><text x="310" y="226" text-anchor="end" class="lbl-s">28</text>
+      <text x="55" y="34" text-anchor="middle" class="lbl-s">menstr.</text>
+      <text x="125" y="244" text-anchor="middle" class="lbl">Fase folicular</text>
+      <text x="170" y="14" text-anchor="middle" class="lbl-s">ovulación</text>
+      <text x="245" y="244" text-anchor="middle" class="lbl">Fase lútea</text>
+      <path d="M30 175 Q100 172 150 80 L160 95 Q172 150 188 140 Q230 110 262 118 Q292 160 310 178" fill="none" stroke="var(--mat)" stroke-width="2.5"/>
+      <path d="M30 200 L170 200 Q215 70 262 85 Q292 150 310 200" fill="none" stroke="var(--pat)" stroke-width="2.5"/>
+      <path d="M30 196 L150 194 L163 185 L170 40 L177 185 L190 194 L310 196" fill="none" stroke="var(--key)" stroke-width="2.5"/>
+      <path d="M30 160 Q70 145 110 168 L158 165 L170 130 L182 168 Q250 182 290 180 L310 165" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+      <g class="lbl-s">
+        <rect x="200" y="22" width="10" height="4" fill="var(--key)"/><text x="214" y="27">LH</text>
+        <rect x="240" y="22" width="10" height="4" fill="var(--accent)"/><text x="254" y="27">FSH</text>
+        <rect x="200" y="36" width="10" height="4" fill="var(--mat)"/><text x="214" y="41">Estrógenos</text>
+        <rect x="200" y="50" width="10" height="4" fill="var(--pat)"/><text x="214" y="55">Progesterona</text>
+      </g>
+    </svg>
+    <figcaption>Esquema cualitativo (las alturas no están a escala entre hormonas).</figcaption>
+  </figure>
+  <ol>
+    <li><b>Menstruación (días 1–5):</b> se desprende el endometrio. Los esteroides están bajos, así que no hay freno y la FSH empieza a subir.</li>
+    <li><b>Fase folicular (días 1–14):</b> la <b>FSH</b> hace crecer un folículo, que secreta <b>estrógenos crecientes</b>. Los estrógenos hacen <b>proliferar</b> el endometrio.</li>
+    <li><b>Ovulación (día ~14):</b> los estrógenos altos ejercen retroalimentación <b>positiva</b> → <b>pico de LH</b> (y de FSH) → se libera el óvulo.</li>
+    <li><b>Fase lútea (días 14–28):</b> el folículo vacío se transforma en <b>cuerpo lúteo</b>, que produce <b>progesterona</b> (y estrógenos). La progesterona <b>mantiene</b> el endometrio preparado para una implantación y, junto con los estrógenos, frena a la FSH y la LH (retroalimentación negativa).</li>
+    <li><b>Final:</b> si no hay embarazo, el cuerpo lúteo degenera, <b>caen la progesterona y los estrógenos</b> y el endometrio se desprende: <b>menstruación</b>. Empieza un nuevo ciclo.</li>
+  </ol>
+  <div class="box key"><span class="box-title">🔑 Si hay embarazo</span>El embrión (la <b>placenta</b>, a través del corion) produce <b>gonadotrofina coriónica humana (hCG)</b>, que mantiene vivo al cuerpo lúteo para que siga produciendo progesterona. Por eso la placenta es la <b>otra estructura que produce gonadotrofinas</b>, además de la adenohipófisis. La hCG es lo que detecta un test de embarazo.</div>
+  <p><b>Funciones de la progesterona:</b> prepara y mantiene el endometrio para la implantación, sostiene el embarazo (inhibe las contracciones uterinas), prepara las glándulas mamarias y eleva levemente la temperatura corporal después de la ovulación.</p>
+
+  <h2>Disruptores endocrinos: cuando el ambiente "habla" el idioma hormonal</h2>
+  <p>En la segunda mitad del siglo XX se observaron problemas reproductivos extraños en animales: águilas estériles, caimanes con caracteres feminizados, peces feminizados cerca de desagües. La zoóloga <b>Theo Colborn</b> encontró el punto en común: la exposición (muchas veces prenatal) a <b>sustancias químicas que alteran el sistema hormonal</b>.</p>
+  <p>Los <b>disruptores endocrinos</b> son sustancias externas, naturales o artificiales, que alteran las hormonas de un organismo o de su descendencia. Los más estudiados imitan o bloquean a los estrógenos (xenoestrógenos). Pueden: 1) <b>unirse</b> a receptores y activarlos; 2) <b>bloquearlos</b> (antagonistas); 3) alterar el <b>metabolismo</b> de las hormonas; 4) cambiar la <b>cantidad de receptores</b>. Ejemplos: PCB, DDT y otros plaguicidas, <b>ftalatos</b> de plásticos blandos, alquilfenoles de detergentes, y fitoestrógenos de la soja. Probar que causan una enfermedad es difícil, porque la exposición es generalizada, los efectos aparecen años después o en la descendencia y las mezclas tienen efectos difíciles de predecir. Por eso se recomienda el <b>principio de precaución</b>, sobre todo con embarazadas y niños.</p>
+
+  <details class="check">
+    <summary>✍️ Explicalo sin mirar, después abrí</summary>
+    <ol>
+      <li>Diferencia entre gigantismo y acromegalia.<span class="ans">Mismo exceso de GH: en la infancia (huesos que todavía crecen) vs. en la adultez.</span></li>
+      <li>¿Qué estructura produce progesterona y cuándo?<span class="ans">El cuerpo lúteo, en la fase lútea (y la placenta en el embarazo).</span></li>
+      <li>¿Qué desencadena la ovulación?<span class="ans">El pico de LH, provocado por retroalimentación positiva de los estrógenos altos.</span></li>
+      <li>¿Qué es un disruptor endocrino? Da dos ejemplos.<span class="ans">Una sustancia externa que altera el sistema hormonal; PCB, ftalatos, DDT.</span></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ======================================================= 8 MÉTODO -->
+<section class="page" id="metodo" tabindex="-1" data-title="8 · El método">
+  <p class="eyebrow">Capítulo 8 · Cómo piensa alguien que responde bien</p>
+  <h1>El método: 5 preguntas para cualquier hormona</h1>
+  <p class="lead">Cuando te pregunten por una hormona o te den un caso, no busques "la frase del libro": recorré estas cinco preguntas. Te ordenan la cabeza y casi siempre la respuesta aparece sola.</p>
+
+  <ol class="plan">
+    <li><b>¿Quién la fabrica?</b><span class="time">Glándula y, si aplica, tipo de célula</span>Ojo con las trampas: ADH y oxitocina las fabrica el hipotálamo; la neurohipófisis solo las libera.</li>
+    <li><b>¿Qué la dispara?</b><span class="time">Estímulo hormonal, químico, nervioso o ritmo</span>¿Otra hormona (TSH)? ¿Algo en la sangre (glucosa, calcio)? ¿Un nervio (simpático)? ¿La luz?</li>
+    <li><b>¿Sobre quién actúa?</b><span class="time">Células blanco</span>¿Qué órgano tiene el receptor?</li>
+    <li><b>¿Qué hace?</b><span class="time">Efecto, con dirección</span>Siempre con flechita: ¿sube o baja la glucemia, el calcio, el agua? ¿Estimula o inhibe?</li>
+    <li><b>¿Quién la frena y qué pasa si sobra o falta?</b><span class="time">Retroalimentación y patología</span>Dibujá el circuito. Exceso y déficit son "la acción normal" exagerada o ausente.</li>
+  </ol>
+
+  <h2>Para los casos con síntomas: razoná en espejo</h2>
+  <div class="box think"><span class="box-title">🧠 El truco del espejo</span>Si sabés qué hace una hormona, sabés qué pasa cuando <b>falta</b> (lo contrario) y cuando <b>sobra</b> (lo mismo, exagerado). Las T3/T4 aceleran el metabolismo → si faltan: lentitud, frío, cansancio; si sobran: aceleración, calor, nerviosismo. No hace falta memorizar listas de síntomas.</div>
+
+  <h2>Los 10 errores más frecuentes</h2>
+  <div class="table-wrap"><table class="t">
+    <thead><tr><th>Error</th><th>Cómo darte cuenta</th></tr></thead>
+    <tbody>
+      <tr><td>Decir que la neurohipófisis fabrica ADH u oxitocina</td><td>Neuro = tejido nervioso: solo libera lo que hace el hipotálamo.</td></tr>
+      <tr><td>Confundir ACTH con ADH</td><td>ACTH → corteza suprarrenal (cortisol). ADH → riñón (agua).</td></tr>
+      <tr><td>Confundir glucagón con glucógeno</td><td>Glucag<b>ón</b> = hormona. Glucóg<b>eno</b> = reserva.</td></tr>
+      <tr><td>Invertir insulina y glucagón</td><td>La insulina es la <b>única</b> que baja la glucemia.</td></tr>
+      <tr><td>Poner la adrenalina en la corteza</td><td>Médula = catecolaminas; corteza = esteroides.</td></tr>
+      <tr><td>Creer que "retroalimentación negativa" es algo malo</td><td>Negativa = estabiliza.</td></tr>
+      <tr><td>Decir que la hipófisis es la que manda en todo</td><td>Obedece al hipotálamo.</td></tr>
+      <tr><td>Decir que la prolactina expulsa la leche</td><td>Prolactina produce; oxitocina eyecta.</td></tr>
+      <tr><td>Confundir calcitonina con parathormona</td><td>Para<b>t</b>hormona = "<b>t</b>rae" calcio a la sangre; calcito<b>nina</b> lo "<b>niega</b>".</td></tr>
+      <tr><td>Afirmar con certeza total lo del eje intestino-cerebro</td><td>Es evidencia prometedora, no concluyente.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Estrategia cuando tenés poco tiempo</h2>
+  <ul>
+    <li><b>Primera pasada:</b> respondé lo que sabés seguro.</li>
+    <li><b>Casos:</b> dibujá el eje en papel (hipotálamo → hipófisis → glándula → hormona, con las flechas de freno). Te lleva 20 segundos y evita confusiones.</li>
+    <li><b>Control final:</b> en cada respuesta, ¿pusiste la dirección correcta (sube/baja)?</li>
+  </ul>
+</section>
+
+<!-- ======================================================= 9 RESUELTOS -->
+<section class="page" id="resueltos" tabindex="-1" data-title="9 · Casos resueltos">
+  <p class="eyebrow">Capítulo 9 · Pensar en voz alta</p>
+  <h1>Casos resueltos, paso a paso</h1>
+  <p class="lead">Cada paso muestra <span style="color:var(--think);font-weight:700">🧠 lo que pienso</span>, <span style="color:var(--key);font-weight:700">💡 por qué lo hago</span> y <span style="color:var(--accent-strong);font-weight:700">🔍 cómo me controlo</span>.</p>
+  <div class="box think">
+    <span class="box-title">🧭 Cómo usar esta sección</span>
+    No abras todos los pasos de una. Leé el caso, <b>escribí tu respuesta en una hoja</b> y recién después tocá "Mostrar paso". Si no coincide, preguntate: <i>¿qué vio esta persona que yo no vi?</i>
+  </div>
+  <div class="prob-index" id="probIndex"></div>
+  <div id="probList"></div>
+</section>
+
+<!-- ======================================================= 10 PRÁCTICA -->
+<section class="page" id="practica" tabindex="-1" data-title="10 · Práctica">
+  <p class="eyebrow">Capítulo 10 · Práctica con radar de errores</p>
+  <h1>Practicá y medí tu confianza</h1>
+  <p class="lead">Antes de corregir, marcá <b>qué tan seguro o segura te sentís</b>. Así entrenás a darte cuenta de cuándo sabés y cuándo no.</p>
+  <div class="box think">
+    <span class="box-title">🧠 Por qué marcar la confianza</span>
+    <p>El error más peligroso no es "no sé": es <b>"estoy convencido y estoy equivocado"</b>. En este tema pasa mucho por los nombres parecidos. Cuando aparezca la alarma 🚨, anotá ese concepto en tu hoja de repaso.</p>
+  </div>
+  <div class="tabs" id="quizTabs" role="group" aria-label="Filtrar preguntas"></div>
+  <div id="quizStats"></div>
+  <div class="card" id="quizCard"></div>
+</section>
+
+<!-- ======================================================= 11 UNIR -->
+<section class="page" id="unir" tabindex="-1" data-title="11 · Uní">
+  <p class="eyebrow">Capítulo 11 · Juego</p>
+  <h1>Uní las parejas</h1>
+  <p class="lead">Tocá un elemento de la izquierda y después su pareja de la derecha. Si acertás, quedan en verde. Tratá de completar la ronda sin errores.</p>
+  <div class="box think small"><span class="box-title">🧭 Antes de tocar</span>Recorré primero toda la columna derecha y decí en voz alta la pareja de cada uno. Tocá solo cuando estés seguro o segura: adivinar no entrena la memoria.</div>
+  <div class="tabs" id="matchTabs" role="group" aria-label="Tipo de juego"></div>
+  <div class="card" id="matchCard"></div>
+</section>
+
+<!-- ======================================================= 12 SIMULACRO -->
+<section class="page" id="simulacro" tabindex="-1" data-title="12 · Simulacro">
+  <p class="eyebrow">Capítulo 12 · Ensayo general</p>
+  <h1>Simulacro cronometrado</h1>
+  <div id="simRoot"></div>
+</section>
+
+<!-- ======================================================= 13 REPASO -->
+<section class="page" id="repaso" tabindex="-1" data-title="13 · Repaso final">
+  <p class="eyebrow">Capítulo 13 · Para cerrar</p>
+  <h1>Repaso final: todo en una pantalla</h1>
+
+  <h2>¿Cómo cambió tu semáforo?</h2>
+  <p>Volvé a marcar cada tema. Debajo de cada uno vas a ver lo que marcaste al empezar. Lo que siga en 🔴 o 🟡, repasalo en otra sesión corta.</p>
+  <div class="card" id="semDespues"></div>
+
+  <h2>Chuleta mental</h2>
+  <div class="table-wrap"><table class="t">
+    <tbody>
+      <tr><td><b>Endocrina / exocrina</b></td><td>A la sangre sin conducto / por un conducto. Mixta: páncreas.</td></tr>
+      <tr><td><b>Hormona</b></td><td>Poca cantidad · viaja por sangre · actúa lejos · necesita receptor · efecto ∝ concentración.</td></tr>
+      <tr><td><b>Proteica / esteroide</b></td><td>Receptor de membrana + 2º mensajero (AMPc) / atraviesa la membrana, receptor intracelular, genes.</td></tr>
+      <tr><td><b>Hipotálamo</b></td><td>Órgano neuroendocrino: controla la hipófisis (sangre → adeno; axones → neuro).</td></tr>
+      <tr><td><b>Adenohipófisis</b></td><td>GH, PRL, TSH, ACTH, FSH, LH (las 4 últimas son tróficas).</td></tr>
+      <tr><td><b>Neurohipófisis</b></td><td>Libera ADH (agua) y oxitocina (parto, leche), fabricadas en el hipotálamo.</td></tr>
+      <tr><td><b>Ejes</b></td><td>TRH → TSH → T3/T4 · CRH → ACTH → cortisol · GnRH → FSH/LH → esteroides sexuales.</td></tr>
+      <tr><td><b>Retroalimentación −</b></td><td>El producto frena arriba. Final alto → arriba baja; final bajo → arriba sube.</td></tr>
+      <tr><td><b>Retroalimentación +</b></td><td>Oxitocina en el parto, lactancia, pico de LH.</td></tr>
+      <tr><td><b>Glucemia</b></td><td>Insulina (β) ↓ · glucagón (α) ↑ · antagonistas.</td></tr>
+      <tr><td><b>Calcio</b></td><td>PTH ↑ · calcitonina ↓.</td></tr>
+      <tr><td><b>Suprarrenal</b></td><td>Corteza: aldosterona, cortisol, andrógenos ("sal, azúcar, sexo"). Médula: adrenalina.</td></tr>
+      <tr><td><b>Estrés</b></td><td>Rápido: simpático → adrenalina. Lento: HHA → cortisol. Crónico → inmunosupresión.</td></tr>
+      <tr><td><b>Ciclo</b></td><td>FSH → estrógenos ↑ → pico de LH → ovulación → cuerpo lúteo → progesterona → (sin embarazo) cae → menstruación.</td></tr>
+      <tr><td><b>Desarrollo</b></td><td>GH: enanismo, gigantismo (infancia), acromegalia (adulto). T3/T4: desarrollo neurológico.</td></tr>
+      <tr><td><b>Intestino-cerebro</b></td><td>Bidireccional; vías: vago y circulatoria (cortisol, serotonina, GABA, AGCC). Evidencia aún no concluyente.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Las 5 preguntas que no fallan</h2>
+  <div class="box key"><b>¿Quién la fabrica? → ¿Qué la dispara? → ¿Sobre quién actúa? → ¿Qué hace (sube o baja)? → ¿Quién la frena y qué pasa si sobra o falta?</b></div>
+
+  <div class="box think">
+    <span class="box-title">🪞 La última pregunta metacognitiva</span>
+    ¿Cuál fue el par de nombres que más confundiste (ACTH/ADH, glucagón/glucógeno, adeno/neuro…)? Escribilo en grande en un papel. La próxima vez que lo veas, esa confusión ya va a tener nombre, y lo que tiene nombre se puede vigilar. 🌙
+  </div>
+</section>
+
+</main>
+
+<footer>Hecho con cariño para estudiar el sistema endocrino · los datos de tu progreso se guardan solo en este navegador.</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
